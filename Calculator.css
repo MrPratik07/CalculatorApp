@@ -1,0 +1,180 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: black;
+}
+
+.body-day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: white;
+}
+
+
+.calc-container{
+    height: 13cm;
+    width: 7cm;
+    background-color: #393e46;
+    border-radius: 15px;
+    min-height: 300px;
+    min-width: 200px;
+    overflow: hidden;
+}
+
+.calc-container-day{
+    height: 13cm;
+    width: 7cm;
+    background-color : lightcyan;
+    border-radius: 15px;
+    border: #242327 solid;
+    min-height: 300px;
+    min-width: 200px;
+    overflow: hidden;
+}
+
+.display-container{
+    height: 40%;
+}
+
+.keypad-container{
+    height: 60%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color:  #242327;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.keypad-container-day{
+    height: 60%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: lightcyan;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    border-top: #242327 solid;
+}
+
+.switch-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.switch{
+    padding: 8px 14px;
+    border-radius: 16px;
+    background-color: #242327;
+}
+
+.switch-day{
+    padding: 8px 14px;
+    border-radius: 16px;
+    background-color: white;
+    border: #242327 solid;
+}
+.icon-size{
+    padding: 3px;
+    font-size: 20px;
+}
+
+.not-selected{
+    color: #7a6868;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+    color: #b4a5a5;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 80%;
+    margin-right: 16px;
+}
+
+.result{
+    font-size: 50px;
+}
+
+.operation{
+    font-size: 30px;
+}
+
+.operand{
+    color: #e77474;
+    font-size: 27px;
+}
+
+.keypad{
+    width: 100%;
+    border-spacing: 1px 3px;
+
+}
+
+tr{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+td{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #393e46;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.key-day{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: #242327 solid;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.action-keys{
+    color:#2aedc9;
+}
+
+.num-keys{
+    color: #b4a5a5;
+}   
+
+.flip-180{
+    transform: rotateY(180deg);
+
+}
+
+
+

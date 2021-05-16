@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Calculator App</title>
+        <link rel="stylesheet" href="Calculator.css"/>
+        <link rel="stylesheet" href="../font-awesome-4.7.0 2/css/font-awesome.min.css"/>
+        <script src="./Calculator.js"></script>
+        <title>Calculator</title>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body>
+        <div class="calc-container" id="calc-container">
+            <div class="display-container" id="display-container">
+                <div class="switch-container" id="switch-container">
+                    <div class="switch" id="switch">
+                        <i  id="switch-container-day" class="fa fa-sun-o fa-lg color icon-size" onclick="dayThemeChangeClickHandler()" aria-hidden="true"></i>
+                        <i id="switch-container-dark" class="fa fa-moon-o fa-lg color icon-size" onclick="darkThemeChangeClickHandler()" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="output">
+                    <label id="secondary-display" class="operation"> <!--308<span class="operand">x</span>42 --></label>
+                    <label id="main-display" class="result">0</label>
+                </div>
+            </div>
+            <div class="keypad-container" id="keypad-container">
+                <table class="keypad" id="keypad">
+                    <tbody>
+                        <tr>
+                            <td><div class="key action-keys" onclick="actionKeyClickHandler('CLEAR_ALL')">AC</div></td>
+                            <td><div class="key action-keys" onclick="actionKeyClickHandler('CHANGE_SIGN')">+/-</div></td>
+                            <td><div class="key action-keys" onclick="operandKeyClickHandler('MOD')">%</div></td>
+                            <td><div class="key operand" onclick="operandKeyClickHandler('DIVIDE')">÷</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="key num-keys" onclick="numKeyClickHandler(7)">7</div></td>
+                            <td><div class="key num-keys" onclick="numKeyClickHandler(8)">8</div></td>
+                            <td><div class="key num-keys" onclick="numKeyClickHandler(9)">9</div></td>
+                            <td><div class="key operand" onclick="operandKeyClickHandler('MULTIPLY')">x</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="key num-keys" onclick="numKeyClickHandler(4)">4</div></td>
+                            <td><div class="key num-keys" onclick="numKeyClickHandler(5)">5</div></td>
+                            <td><div class="key num-keys" onclick="numKeyClickHandler(6)">6</div></td>
+                            <td><div class="key operand" onclick="operandKeyClickHandler('SUBTRACT')">-</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="key num-keys" onclick="numKeyClickHandler(1)">1</div></td>
+                            <td><div class="key num-keys" onclick="numKeyClickHandler(2)">2</div></td>
+                            <td><div class="key num-keys" onclick="numKeyClickHandler(3)">3</div></td>
+                            <td><div class="key operand" onclick="operandKeyClickHandler('ADD')">+</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="key action-keys" onclick="undoClickHandler()"><i class="fa fa-repeat flip-180" aria-hidden="true"></i></div></td>
+                            <td><div class="key num-keys" onclick="numKeyClickHandler(0)">0</div></td>
+                            <td><div class="key num-keys" onclick="numKeyClickHandler('.')">.</div></td>
+                            <td><div class="key operand"onclick="resultClickHandler()">=</div></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </body>
+</html>
